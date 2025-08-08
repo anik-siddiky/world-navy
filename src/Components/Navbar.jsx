@@ -26,7 +26,7 @@ const Navbar = () => {
 
     return (
         <nav>
-            <div className='flex items-start py-3 justify-between max-w-[1000px] mx-auto'>
+            <div className='flex items-start py-4 justify-between max-w-[1000px] mx-auto'>
                 <Link to="/">
                     <img src={logo} />
                 </Link>
