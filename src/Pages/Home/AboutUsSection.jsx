@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import aboutBanner from '../../assets/aboutPhoto.jpg'
 import aboutImg from '../../assets/aboutUsImage.gif'
 import infoImg from '../../assets/informationImg.gif'
@@ -18,17 +19,19 @@ const AboutUsSection = () => {
                 <div className='bg-[#F4F4F4] text-[13px] noto-sans-jp py-5'>
                     <div className='flex gap-8 p-2'>
                         <dt>2025/07/15</dt>
-                        <p className='text-[#FF9600] hover:underline cursor-pointer pb-1'>夏期休業のお知らせ Notice of office Closure</p>
+                        <Link to="/notice-of-office-closure"><p className='text-[#FF9600] hover:underline cursor-pointer pb-1'>夏期休業のお知らせ Notice of office Closure</p></Link>
                     </div>
                     <div className='border-b border-gray-300'></div>
+
                     <div className='flex gap-8 p-2'>
                         <dt>2025/04/08</dt>
-                        <p className='text-[#FF9600] hover:underline cursor-pointer pb-1'>GW休業のお知らせ Notice of office closure</p>
+                        <Link to="/notice-of-golden-week"><p className='text-[#FF9600] hover:underline cursor-pointer pb-1'>GW休業のお知らせ Notice of office closure</p></Link>
                     </div>
                     <div className='border-b border-gray-300'></div>
+
                     <div className='flex gap-8 p-2'>
                         <dt>2024/11/27</dt>
-                        <p className='text-[#FF9600] hover:underline cursor-pointer pb-1'>年末年始のお知らせ Winter holiday</p>
+                        <Link to="/winter-holiday-notice"><p className='text-[#FF9600] hover:underline cursor-pointer pb-1'>年末年始のお知らせ Winter holiday</p></Link>
                     </div>
                     <div className='border-b border-gray-300'></div>
 
