@@ -2,6 +2,7 @@ import { createBrowserRouter, } from "react-router";
 import MainLayout from "../Layouts/MainLayout";
 import Home from "../Pages/Home/Home";
 import CompanyProfile from "../Pages/CompanyProfile/CompanyProfile";
+import ExportBase from "../Pages/ExportBase/ExportBase";
 
 const Router = createBrowserRouter([
     {
@@ -16,7 +17,12 @@ const Router = createBrowserRouter([
             {
                 path: 'company-profile',
                 element: <CompanyProfile></CompanyProfile>
-            }
+            },
+            {
+                path: 'export-base',
+                element: <ExportBase></ExportBase>
+            },
+            
         ]
     },
 ]);

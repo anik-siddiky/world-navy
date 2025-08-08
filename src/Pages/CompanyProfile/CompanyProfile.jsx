@@ -4,8 +4,14 @@ import companyPro from '../../assets/company_title.jpg'
 import banner2 from '../../assets/companyBanner.jpg'
 import corporateBanner from '../../assets/corporateBanner.jpg'
 import exportPointImg from '../../assets/exportPoint.gif'
+import { useEffect } from 'react';
 
 const CompanyProfile = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div className='max-w-[1000px] mx-auto pt-5 pb-10'>
             <p className='text-[12px] pb-5 text-end'> <Link to="/" className='text-[#FF9600] hover:underline cursor-pointer'>WORLD NAVI TOP</Link> {">"} Company Profile</p>
@@ -109,7 +115,7 @@ const CompanyProfile = () => {
                         ></iframe>
                     </div>
 
-                    <Link to="" className='flex justify-center'>
+                    <Link to="/export-base" className='flex justify-center'>
                         <img src={exportPointImg} alt="" />
                     </Link>
                 </div>
