@@ -31,10 +31,10 @@ const Navbar = () => {
                     <img src={logo} />
                 </Link>
                 <div className='flex gap-1'>
-                    <button className='text-white bg-black py-0.5 px-2.5 text-sm cursor-pointer hover:bg-black/75'>JAPANESE</button>
-                    <button className='text-white bg-black py-0.5 px-2.5 text-sm cursor-pointer hover:bg-black/75'>ENGLISH</button>
-                    <button className='text-white bg-black py-0.5 px-2.5 text-sm cursor-pointer hover:bg-black/75'>SPANISH</button>
-                    <button className='text-white bg-black py-0.5 px-2.5 text-sm cursor-pointer hover:bg-black/75'>RUSSIAN</button>
+                    <button className='text-white bg-black py-0.5 px-2.5 text-[13px] cursor-pointer hover:bg-black/75'>JAPANESE</button>
+                    <button className='text-white bg-black py-0.5 px-2.5 text-[13px] cursor-pointer hover:bg-black/75'>ENGLISH</button>
+                    <button className='text-white bg-black py-0.5 px-2.5 text-[13px] cursor-pointer hover:bg-black/75'>SPANISH</button>
+                    <button className='text-white bg-black py-0.5 px-2.5 text-[13px] cursor-pointer hover:bg-black/75'>RUSSIAN</button>
                 </div>
             </div>
 
