@@ -6,6 +6,8 @@ import ExportBase from "../Pages/ExportBase/ExportBase";
 import NoticeOfOfficeClosure from "../Pages/NewsPages/NoticeOfOfficeClosure";
 import NoticeOfGoldenWeek from "../Pages/NewsPages/NoticeOfGoldenWeek";
 import WinterHolidayNotice from "../Pages/NewsPages/WinterHolidayNotice";
+import BusinessDescription from "../Pages/BusinessDescription/BusinessDescription";
+import Sales from "../Pages/Sales/Sales";
 
 const Router = createBrowserRouter([
     {
@@ -36,6 +38,14 @@ const Router = createBrowserRouter([
             {
                 path: 'winter-holiday-notice',
                 element: <WinterHolidayNotice></WinterHolidayNotice>
+            },
+            {
+                path: 'business-description',
+                element: <BusinessDescription></BusinessDescription>
+            },
+            {
+                path: 'sales',
+                element: <Sales></Sales>
             }
         ]
     },
