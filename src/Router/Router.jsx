@@ -8,6 +8,7 @@ import NoticeOfGoldenWeek from "../Pages/NewsPages/NoticeOfGoldenWeek";
 import WinterHolidayNotice from "../Pages/NewsPages/WinterHolidayNotice";
 import BusinessDescription from "../Pages/BusinessDescription/BusinessDescription";
 import Sales from "../Pages/Sales/Sales";
+import Acquisition from "../Pages/Acquisition/Acquisition";
 
 const Router = createBrowserRouter([
     {
@@ -46,6 +47,10 @@ const Router = createBrowserRouter([
             {
                 path: 'sales',
                 element: <Sales></Sales>
+            },
+            {
+                path: 'acquisition',
+                element: <Acquisition></Acquisition>
             }
         ]
     },
