@@ -10,6 +10,8 @@ import BusinessDescription from "../Pages/BusinessDescription/BusinessDescriptio
 import Sales from "../Pages/Sales/Sales";
 import Acquisition from "../Pages/Acquisition/Acquisition";
 import Gallery from "../Pages/Gallery/Gallery";
+import ErrorLayout from "../Layouts/ErrorLayout";
+import Error from "../Pages/Error/Error";
 
 const Router = createBrowserRouter([
     {
@@ -59,6 +61,17 @@ const Router = createBrowserRouter([
             }
         ]
     },
+
+    {
+        path: '*',
+        element: <ErrorLayout></ErrorLayout>,
+        children: [
+            {
+                path: '*',
+                element: <Error></Error>
+            }
+        ]
+    }
 ]);
 
 export default Router
