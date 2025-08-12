@@ -9,6 +9,7 @@ import WinterHolidayNotice from "../Pages/NewsPages/WinterHolidayNotice";
 import BusinessDescription from "../Pages/BusinessDescription/BusinessDescription";
 import Sales from "../Pages/Sales/Sales";
 import Acquisition from "../Pages/Acquisition/Acquisition";
+import Gallery from "../Pages/Gallery/Gallery";
 
 const Router = createBrowserRouter([
     {
@@ -51,6 +52,10 @@ const Router = createBrowserRouter([
             {
                 path: 'acquisition',
                 element: <Acquisition></Acquisition>
+            },
+            {
+                path: 'gallery',
+                element: <Gallery></Gallery>
             }
         ]
     },
