@@ -12,6 +12,7 @@ import Acquisition from "../Pages/Acquisition/Acquisition";
 import Gallery from "../Pages/Gallery/Gallery";
 import ErrorLayout from "../Layouts/ErrorLayout";
 import Error from "../Pages/Error/Error";
+import Contact from "../Pages/Contact/Contact";
 
 const Router = createBrowserRouter([
     {
@@ -58,6 +59,10 @@ const Router = createBrowserRouter([
             {
                 path: 'gallery',
                 element: <Gallery></Gallery>
+            },
+            {
+                path: 'contact',
+                element: <Contact></Contact>
             }
         ]
     },
