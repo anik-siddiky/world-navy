@@ -22,18 +22,19 @@ const Acquisition = () => {
     ]
 
     return (
-        <div className='max-w-[1000px] mx-auto pt-5 pb-10'>
-            <p className='text-[12px] pb-5 text-end'> <Link to="/" className='text-[#FF9600] hover:underline cursor-pointer'>WORLD NAVI TOP</Link> {">"} <Link to="/acquisition" className='text-[#FF9600] hover:underline cursor-pointer'>Acquisition</Link> {">"} Sales</p>
-            <div className='flex gap-10'>
-                <img className='h-[270px]' src={banner} alt="" />
+        <div className='max-w-[1000px] mx-auto pt-5 pb-10 px-3 sm:px-5 lg:px-0'>
+            <p className='text-[12px] pb-5 text-end'> 
+                <Link to="/" className='text-[#FF9600] hover:underline cursor-pointer'>WORLD NAVI TOP</Link> {">"} 
+                <Link to="/acquisition" className='text-[#FF9600] hover:underline cursor-pointer'>Acquisition</Link> {">"} Sales
+            </p>
+
+            <div className='flex flex-col lg:flex-row gap-6 lg:gap-10'>
+                <img className='h-[200px] sm:h-[250px] lg:h-[270px] w-full lg:w-auto object-cover' src={banner} alt="" />
 
                 <div className='space-y-10'>
                     <img src={businessDesImg} alt="" />
-
                     <img className='w-full' src={acquisition} alt="" />
-
                     <img src={buy1} alt="" />
-
                     <img src={img2} alt="" />
 
                     <p className='text-[13px] leading-[1.9] text-center'>
@@ -44,13 +45,13 @@ const Acquisition = () => {
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pb-5">
                         {cardData.map((item, index) => (
-                            <div key={index} className="bg-white rounded-lg overflow-hidden shadow-md  border-3 border-[#FE9900]">
+                            <div key={index} className="bg-white rounded-lg overflow-hidden shadow-md border-3 border-[#FE9900]">
                                 <img
                                     src={item.image}
                                     alt={item.title}
-                                    className="w-full h-48 object-cover"
+                                    className="w-full h-40 sm:h-48 object-cover"
                                 />
-                                <div className="p-4 h-52">
+                                <div className="p-4">
                                     <h3 className="text-lg text-[#FE9900] font-medium">{item.title}</h3>
                                     <p className="text-[13px] leading-[1.8] text-gray-700 mt-2">
                                         {item.description}
@@ -60,8 +61,7 @@ const Acquisition = () => {
                         ))}
                     </div>
 
-
-                    <div className='flex gap-9'>
+                    <div className='flex gap-5 lg:gap-9 justify-center'>
                         <Link to="/business-description"><img src={btn1} alt="" /></Link>
                         <Link to="/sales"><img src={btn2} alt="" /></Link>
                         <Link to="/acquisition"><img src={btn3} alt="" /></Link>

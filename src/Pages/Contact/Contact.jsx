@@ -41,7 +41,7 @@ const Contact = () => {
 
     if (submitted) {
         return (
-            <div className="min-h-[calc(100vh-143px)] flex items-center justify-center bg-gradient-to-br from-orange-50 to-orange-100 p-6">
+            <div className="min-h-[calc(100vh-143px)] flex items-center justify-center bg-gradient-to-br from-orange-50 to-orange-100 p-6 sm:px-3 md:px-5">
                 <div className="bg-white shadow-2xl rounded-2xl p-8 w-full max-w-lg text-center">
                     <h2 className="text-3xl font-bold text-[#FF9600] mb-4">Thank You!</h2>
                     <p className="text-gray-600 mb-6">Your message has been successfully sent.</p>
@@ -55,21 +55,21 @@ const Contact = () => {
     }
 
     return (
-        <div className="min-h-[calc(100vh-143px)] flex flex-col items-center justify-center bg-gradient-to-br from-orange-50 to-orange-100 p-6">
-            <div className="bg-white shadow-2xl rounded-2xl p-8 w-full max-w-3xl space-y-6">
+        <div className="min-h-[calc(100vh-143px)] flex flex-col items-center justify-center bg-gradient-to-br from-orange-50 to-orange-100 p-6 sm:px-3 md:px-5">
+            <div className="bg-white shadow-2xl rounded-2xl p-6 lg:p-8 w-full max-w-3xl space-y-6">
                 <div className="text-center">
-                    <h1 className="text-4xl font-bold text-[#FF9600] mb-4">Get in Touch with World Navi</h1>
-                    <p className="text-gray-700 mb-4">
+                    <h1 className="text-2xl lg:text-4xl font-bold text-[#FF9600] mb-4 sm:text-2xl md:text-3xl">Get in Touch with World Navi</h1>
+                    <p className="text-gray-600 text-sm sm:text-xs md:text-sm">
                         From Japan to the world, World Navi is your trusted partner in exporting high-quality pre-owned Japanese cars.
                         Fill out the form below, and our team will get back to you promptly.
                     </p>
-                    <p className="text-gray-600 text-sm">
+                    <p className="text-gray-600 text-sm sm:text-xs md:text-sm">
                         We value your trust and aim to provide quick, reliable, and professional service from locating, purchasing, servicing, processing, to exporting your car.
                     </p>
                 </div>
 
-                <div className="bg-gray-50 p-6 rounded-xl shadow-inner space-y-5">
-                    <h2 className="text-2xl font-semibold text-[#FF9600] mb-4 text-center">Contact Form</h2>
+                <div className="bg-gray-50 p-6 sm:p-4 md:p-5 rounded-xl shadow-inner space-y-5">
+                    <h2 className="text-2xl font-semibold text-[#FF9600] mb-4 text-center sm:text-xl md:text-[22px]">Contact Form</h2>
                     <form onSubmit={handleSubmit} className="space-y-5">
                         <div>
                             <label className="block text-sm font-medium text-gray-700 mb-1">Name</label>
@@ -80,7 +80,7 @@ const Contact = () => {
                                 onChange={handleChange}
                                 placeholder="Enter your name"
                                 required
-                                className="w-full px-4 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FF9600]" />
+                                className="w-full px-4 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FF9600] sm:px-3 sm:py-1.5 md:px-3 md:py-2" />
                         </div>
                         <div>
                             <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
@@ -91,7 +91,7 @@ const Contact = () => {
                                 onChange={handleChange}
                                 placeholder="Enter your email"
                                 required
-                                className="w-full px-4 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FF9600]" />
+                                className="w-full px-4 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FF9600] sm:px-3 sm:py-1.5 md:px-3 md:py-2" />
                         </div>
                         <div>
                             <label className="block text-sm font-medium text-gray-700 mb-1">Message</label>
@@ -102,13 +102,13 @@ const Contact = () => {
                                 placeholder="Write your message..."
                                 rows="4"
                                 required
-                                className="w-full px-4 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FF9600]"
+                                className="w-full px-4 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FF9600] sm:px-3 sm:py-1.5 md:px-3 md:py-2"
                             ></textarea>
                         </div>
                         <button
                             type="submit"
                             disabled={loading}
-                            className={`w-full py-2 rounded-xl transition duration-300 shadow-md cursor-pointer
+                            className={`w-full py-2 rounded-xl transition duration-300 shadow-md cursor-pointer sm:py-1.5 md:py-2
                                 ${loading ? "bg-gray-400 text-gray-200 cursor-not-allowed" : "bg-[#FF9600] text-white hover:bg-[#e67f00]"}`}>
                             {loading ? "Sending..." : "Send Message"}
                         </button>
