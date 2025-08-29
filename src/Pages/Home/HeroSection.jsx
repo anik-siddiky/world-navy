@@ -17,8 +17,8 @@ const HeroSection = () => {
                 showStatus={false}
                 stopOnHover={true}
                 dynamicHeight={false}
-                showIndicators={false}
-            >
+                showIndicators={false}>
+                    
                 <img src={carouselImg1} alt="" />
                 <img src={carouselImg2} alt="" />
                 <img src={carouselImg3} alt="" />
